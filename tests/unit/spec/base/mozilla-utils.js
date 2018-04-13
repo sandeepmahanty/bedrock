@@ -9,6 +9,23 @@ describe('mozilla-utils.js', function() {
 
     'use strict';
 
+    describe('switchPathLanguage', function () {
+        it('should return the same URL with a different language prefix', function () {
+            var location = {
+                pathname: '/en-US/firefox/new/',
+                search: '',
+            };
+            expect(Mozilla.Utils.switchPathLanguage(location, 'de')).toEqual('/de/firefox/new/');
+
+            location.search = '?dude=abide';
+            expect(Mozilla.Utils.switchPathLanguage(location, 'de')).toEqual('/de/firefox/new/?dude=abide');
+
+            location.pathname = '/fr/firefox/';
+            location.search = '';
+            expect(Mozilla.Utils.switchPathLanguage(location, 'zh-TW')).toEqual('/zh-TW/firefox/');
+        });
+    });
+
     describe('initMobileDownloadLinks', function () {
 
         var $link;
