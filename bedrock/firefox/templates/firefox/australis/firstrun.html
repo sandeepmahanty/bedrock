@@ -15,11 +15,16 @@
 {% block telemetry_id %}australis-29-release-no-tour{% endblock %}
 
 {% block page_css %}
-  {% stylesheet 'firefox_tour_none' %}
+  <link href="{{ static('css/firefox/australis/australis-page-common.css') }}" rel="stylesheet" type="text/css" />
+  <link href="{{ static('css/firefox/sync-animation.css') }}" rel="stylesheet" type="text/css" />
+  <link href="{{ static('css/firefox/australis/australis-page-stacked.css') }}" rel="stylesheet" type="text/css" />
 {% endblock %}
 
 {% block js %}
-  {% javascript 'firefox_tour_none' %}
+  <script type="text/javascript" src="{{ static('js/libs/jquery.waypoints.min.js') }}" charset="utf-8"></script>
+  <script type="text/javascript" src="{{ static('js/base/uitour-lib.js') }}" charset="utf-8"></script>
+  <script type="text/javascript" src="{{ static('js/firefox/australis/common.js') }}" charset="utf-8"></script>
+  <script type="text/javascript" src="{{ static('js/firefox/australis/no-tour.js') }}" charset="utf-8"></script>
 {% endblock %}
 
 {% block main_heading %}

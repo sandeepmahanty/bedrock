@@ -1,3 +1,3 @@
 {% if settings.OPTIMIZELY_PROJECT_ID %}
-  {% javascript 'optimizely-snippet' %}
+  <script type="text/javascript" src="{{ static('js/base/optimizely-snippet.js') }}" charset="utf-8"></script>
 {% endif %}
