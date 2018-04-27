@@ -333,7 +333,8 @@ STATICFILES_FINDERS = (
     'pipeline.finders.PipelineFinder',
 )
 STATICFILES_DIRS = (
-    path('media'),
+    path('static_build'),
+
 )
 
 PIPELINE = {
