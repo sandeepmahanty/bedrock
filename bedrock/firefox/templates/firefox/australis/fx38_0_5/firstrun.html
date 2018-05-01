@@ -27,7 +27,7 @@
 {% block body_class %}mozID{% endblock %}
 
 {% block page_css %}
-  <link href="{{ static('css/firefox/australis/fx38_0_5/firstrun.css') }}" rel="stylesheet" type="text/css" />
+  {% stylesheet 'firefox_fx38_0_5_firstrun' %}
 {% endblock %}
 
 {% block site_header %}
@@ -97,8 +97,7 @@
 {% endblock %}
 
 {% block js %}
-  <script type="text/javascript" src="{{ static('js/base/uitour-lib.js') }}" charset="utf-8"></script>
-  <script type="text/javascript" src="{{ static('js/firefox/australis/fx38_0_5/firstrun.js') }}" charset="utf-8"></script>
+  {% javascript 'firefox_fx38_0_5_firstrun' %}
 {% endblock %}
 
 {# Bug 1381776 #}

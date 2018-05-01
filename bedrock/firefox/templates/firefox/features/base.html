@@ -13,7 +13,7 @@
 {% endblock %}
 
 {% block page_css %}
-  <link href="{{ static('css/firefox/features/common.css') }}" rel="stylesheet" type="text/css" />
+  {% stylesheet 'firefox-features-hub-common' %}
 {% endblock %}
 
 {% block content %}
@@ -62,7 +62,5 @@
 {% endblock %}
 
 {% block js %}
-  <script type="text/javascript" src="{{ static('js/libs/jquery.waypoints.min.js') }}" charset="utf-8"></script>
-  <script type="text/javascript" src="{{ static('js/libs/jquery.waypoints-sticky.min.js') }}" charset="utf-8"></script>
-  <script type="text/javascript" src="{{ static('js/hubs/sub-nav.js') }}" charset="utf-8"></script>
+  {% javascript 'firefox-features-hub' %}
 {% endblock %}
