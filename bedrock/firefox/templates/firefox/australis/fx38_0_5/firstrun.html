@@ -27,7 +27,7 @@
 {% block body_class %}mozID{% endblock %}
 
 {% block page_css %}
-  <link href="{{ static('css/BUNDLES/firefox_fx38_0_5_firstrun.css') }}" rel="stylesheet" type="text/css" />
+  {% stylesheet 'firefox_fx38_0_5_firstrun' %}
 {% endblock %}
 
 {% block site_header %}
@@ -97,7 +97,7 @@
 {% endblock %}
 
 {% block js %}
-  <script type="text/javascript" src="{{ static('js/BUNDLES/firefox_fx38_0_5_firstrun.js') }}" charset="utf-8"></script>
+  {% javascript 'firefox_fx38_0_5_firstrun' %}
 {% endblock %}
 
 {# Bug 1381776 #}
