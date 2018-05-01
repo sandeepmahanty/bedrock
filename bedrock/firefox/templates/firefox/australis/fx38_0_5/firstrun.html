@@ -27,7 +27,7 @@
 {% block body_class %}mozID{% endblock %}
 
 {% block page_css %}
-  {% stylesheet 'firefox_fx38_0_5_firstrun' %}
+  {{ css_bundle('firefox_fx38_0_5_firstrun') }}
 {% endblock %}
 
 {% block site_header %}
@@ -97,7 +97,7 @@
 {% endblock %}
 
 {% block js %}
-  {% javascript 'firefox_fx38_0_5_firstrun' %}
+  {{ js_bundle('firefox_fx38_0_5_firstrun') }}
 {% endblock %}
 
 {# Bug 1381776 #}

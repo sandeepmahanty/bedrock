@@ -15,11 +15,11 @@
 {% block telemetry_id %}australis-29-release-no-tour{% endblock %}
 
 {% block page_css %}
-  {% stylesheet 'firefox_tour_none' %}
+  {{ css_bundle('firefox_tour_none') }}
 {% endblock %}
 
 {% block js %}
-  {% javascript 'firefox_tour_none' %}
+  {{ js_bundle('firefox_tour_none') }}
 {% endblock %}
 
 {% block main_heading %}

@@ -32,7 +32,7 @@
 {% endblock %}
 
 {% block page_css %}
-  {% stylesheet 'home-2018' %}
+  {{ css_bundle('home-2018') }}
 {% endblock %}
 
 {% block site_header %}
@@ -412,5 +412,5 @@
 {% endblock %}
 
 {% block js %}
-  {% javascript 'home' %}
+  {{ js_bundle('home') }}
 {% endblock %}
